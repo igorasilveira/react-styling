@@ -1,24 +1,81 @@
 import Card from "../components/Card";
+import styles from "../styles/pages/index.module.css";
 
 function App() {
   return (
     <div className="">
-      <header className="text-center bg-gray-100 py-14 h-screen flex flex-col justify-center">
-        <h1 className="font-bold text-5xl">Welcome to <span className="text-blue-500">React Styling</span></h1>
-        <h2 className="font-normal text-2xl text-gray-500 italic my-5">Lets learn the multiple ways that you can style your React components to create beautiful pages like this one.</h2>
-        <div className="p-5">
-          <a className="font-bold text-white uppercase bg-blue-500 rounded p-4" href="#cards">
+      <header style={{
+        height: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        textAlign: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'rgba(243,244,246,1)'
+      }} className={`${styles.Header} full-height flex-col`}>
+        <h1 style={{
+          fontSize: '3rem',
+          lineHeight: 1,
+          fontWeight: 700,
+        }}>Welcome to&nbsp;
+          <span style={{
+              color: 'rgba(59,130,246,1)'
+            }}>
+            React Styling
+          </span>
+        </h1>
+        <h2 style={{
+          marginTop: '1.25rem',
+          marginBottom: '1.25rem',
+          fontSize: '1.5rem',
+          lineHeight: '2rem',
+          fontWeight: 400,
+          fontStyle: 'italic',
+          color: 'rgba(107,114,128,1)',
+        }}>Lets learn the multiple ways that you can style your React components to create beautiful pages like this one.</h2>
+        <div style={{
+          padding: '1.25rem'
+        }}>
+          <a style={{
+            textTransform: 'uppercase',
+            color: 'white',
+            padding: '1rem',
+            fontWeight: 700,
+            borderRadius: '0.25rem',
+            backgroundColor: 'rgba(59,130,246,1)',
+          }} href="#cards">
               Get Started
           </a>
         </div>
       </header>
-      <section id="cards" className="bg-gray-50 py-14 h-screen flex flex-col justify-center items-center">
-        <h3 className="font-bold text-5xl mb-8">Cards</h3>
-        <div className="flex w-full justify-center">
+      <section id="cards" style={{
+          backgroundColor: 'rgba(249,250,251,1)',
+          height: '100vh',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
+        <h3 style={{
+          fontSize: '3rem',
+          lineHeight: 1,
+          fontWeight: 700,
+          marginBottom: '2rem',
+        }}>Cards</h3>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
           <Card />
           <Card />
         </div>
-        <div className="flex w-full justify-center">
+        <div style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
           <Card />
           <Card />
         </div>
