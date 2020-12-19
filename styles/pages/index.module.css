@@ -1,0 +1,14 @@
+.Header {
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(243,244,246,1);
+}
+
+.CardSection {
+    background-color: rgba(249,250,251,1);
+}
+
+.MutedParagraph {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
